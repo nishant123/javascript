@@ -17,7 +17,7 @@ function enrollStudent(student, callback) {
 function getStudent() {
     setTimeout(function () {
         let str = "";
-        students.forEach(function (post) {
+        students.forEach(function (student) {
             str += `<li>${student.name}</li>`
         });
         document.getElementById('students').innerHTML = str;
@@ -27,5 +27,5 @@ function getStudent() {
 
 let newStudent = { name: "Sunny", subject: "python" }
 //enrollStudent(newStudent);
-enrollStudent(newStudent,getStudent());
+enrollStudent(newStudent,getStudent);
 //getStudents();
