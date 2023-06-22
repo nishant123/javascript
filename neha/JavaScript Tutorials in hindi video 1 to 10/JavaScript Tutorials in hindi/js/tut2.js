@@ -1,0 +1,11 @@
+console.log("Hello console");
+console.log(4 + 53);
+console.log(true);
+console.log([34, 23, 56, 1]);
+console.log({ 'Neha': 'this', marks: 34 });
+console.table({ 'Neha': 'this', marks: 34 });
+//console.clear();
+console.warn('this is warning');
+//console.clear();
+console.timeEnd('your code took');
+console.assert(566 < 189, 'Age>189 is not possible');

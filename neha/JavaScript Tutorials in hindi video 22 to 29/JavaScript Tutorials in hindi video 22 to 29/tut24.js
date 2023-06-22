@@ -1,0 +1,14 @@
+console.log("welocme to new js file 24.js");
+let today = new Date();
+//console.log(today);
+let otherdate = new Date('10-13-1989 04:00:00');
+otherdate = new Date('june 13 1976');
+otherdate = new Date('09/16/1976');
+//console.log(otherdate);
+let a;
+a = otherdate.getDay();
+a = otherdate.getDate();
+//a = otherdate.getMinutes();
+//a = otherdate.getSeconds();
+//a = otherdate.getHours();
+console.log(a);
