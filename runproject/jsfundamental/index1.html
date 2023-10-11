@@ -1,0 +1,55 @@
+<!-- <script src="destructure.js"></script> -->
+
+//capturing
+<style>
+    body * {
+      margin: 10px;
+      border: 1px solid blue;
+    }
+  </style>
+  
+
+  
+  <script>
+
+
+
+const baz = () => console.log('baz');
+
+const foo = () => console.log('foo');
+
+const zoo = () => console.log('zoo');
+
+const start = () => {
+
+ console.log('start');
+
+ setImmediate(baz);
+
+ new Promise((resolve, reject) => {
+
+   resolve('bar');
+
+ }).then((resolve) => {
+
+   console.log(resolve);
+
+   process.nextTick(zoo);
+
+ });
+
+ process.nextTick(foo);
+
+};
+
+start();
+
+
+
+  </script>
+
+  <!-- start
+  baz
+  bar
+  zoo
+  foo -->
