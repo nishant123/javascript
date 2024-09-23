@@ -68,4 +68,118 @@ fruits3.unshift("Lemon", "Pineapple");
 //Lemon,Pineapple,Banana,Orange,Apple,Mango
 // valueOf() returns the array itself:
 
+
+
+const emp = [
+    { name: "Alice", age: 25, dept: "it" , salary: 15000 },
+    { name: "Bob", age: 30 , dept: "sales" , salary: 19000},
+    { name: "Carol", age: 27 , dept: "it" , salary: 18000},
+    { name: "Dave", age: 32 , dept: "sales" , salary: 14000},
+  ];
+
+  //emp.filter(sumsal);
+//   function sumsal(item) {
+
+//     return item.
+//   }
+
+
+  
+//   To find age>28 and sum up salary as per department
+//   emp.foreach
+//   algorithm
+  
+//   1 use foreach loop to extract the record which is having age>28 and put it into array
+//   2 print that array
+  
+  var arr = [11, 21, 31, 41, 51]
+  for(var i = 0; i < arr.length; i++) {
+    var j =i;
+    //console.log(arr[j]);
+    
+    setTimeout(() => {
+      console.log(arr[j]);
+  
+    }, 0);
+    
+  }
+  
+  var arr = [1,1,1,1,2,2,2,3,3,3,44,4,44,4,44,5,5,5];
+  
+  var newarr,resarr;
+  for(var i=0;i<arr.length; i++)
+  {
+    //resarr[newarr[i]] = arr.filter(sumarr(arr[i]));
+    // resarr[i]=arr[i];
+    if(arr[i]== arr[i+1]) {
+      
+    }
+  }
+  function sumarr(value) {
+    console.log('sum arr caled');
+  }
+  
+  // output
+  
+  /* {
+      1: 4,
+      2: 3,
+      3: 3,
+      44: 3,
+      4: 2,
+      5: 3
+  } */
+
+  
+
+  const products = [
+    { name: "apples", category: "fruits" },
+    { name: "oranges", category: "fruits" },
+    { name: "potatoes", category: "vegetables" }
+  ];
+  
+  const groupByCategory = products.reduce((group, product) => {
+    const { category } = product;
+    group[category] = group[category] ?? [];
+    group[category].push(product);
+    return group;
+  }, {});
+  
+  console.log(JSON.stringify(groupByCategory, null, 2)); // { fruits: [...], vegetables: [...] }
+  
+
+
+
+
+
+
 // Banana,Orange,Apple,Mango
+
+//result is given below
+// test
+// item { fname: 'nishant', age: 21, dept: 'science' } 0
+// item { fname: 'nishant1', age: 25, dept: 'math' } 1
+// item { fname: 'nishant2', age: 21, dept: 'science' } 2
+// item { fname: 'nishant3', age: 26, dept: 'english' } 3
+// [
+//   { fname: 'nishant', age: 21, dept: 'science' },
+//   { fname: 'nishant2', age: 21, dept: 'science' }
+// ]
+// [
+//   { fname: 'nishant', age: 21, dept: 'science' },
+//   { fname: 'nishant2', age: 21, dept: 'science' }
+// ]
+// [
+//   { fname: 'nishant', age: 210, dept: 'science' },
+//   { fname: 'nishant1', age: 250, dept: 'math' },
+//   { fname: 'nishant2', age: 210, dept: 'science' },
+//   { fname: 'nishant3', age: 260, dept: 'english' }
+// ]
+// [ 'f1', 'f2', 'f3', 'f4', 'f5', 'f6' ]
+// [ 0, 'f1' ]
+// [ 1, 'f2' ]
+// [ 2, 'f3' ]
+// 20
+// 100
+// -200
+// Banana
