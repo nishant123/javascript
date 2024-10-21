@@ -1,6 +1,7 @@
 const depthfn = function(object) {
     var level = 1;
     for(var key in object) {
+      console.log('key'+ key);
         if (!object.hasOwnProperty(key)) continue;
 
         if(typeof object[key] == 'object'){
